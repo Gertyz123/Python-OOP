@@ -6,12 +6,15 @@ def main():
     wn = turtle.Screen()  # creates a graphics window
     alex = turtle.Turtle()  # create a turtle named alex
 
-    def triangle():
+    def triangle(lenght):
         for i in range(3):
-            alex.forward(100)
+            alex.forward(lenght)
             alex.left(120)
 
-    triangle()
+    for i in range(36):
+        triangle(100)
+        alex.right(10)
+
 
     turtle.exitonclick()
 
